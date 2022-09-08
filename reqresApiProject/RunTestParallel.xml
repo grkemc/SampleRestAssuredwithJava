@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/Gorkem_Ceyhan/Documents/CodeWay Project/Case - 2/RestAssured - Java/reqresApiProject" parallel="methods" thread-count="2">
+        <classes>
+            <class name="com.codeway.apiTest.ReqresApiTest">
+                <methods>
+                    <include name="shouldResponseCodeOk"/>
+                    <include name="shouldResponseBodyContainsDesiredLastName"/>
+                    <include name="shouldResponseBodyContainsDesiredNumberOfData"/>
+                    <include name="shouldResponseTimeOk"/>
+                    <include name="shouldResponseSizeOk"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
